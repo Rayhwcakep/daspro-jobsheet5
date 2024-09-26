@@ -25,6 +25,7 @@ public class kafe26 {
             case "kopi":
             hargaMenu = 12000; 
                 break;
+
             case "teh":
             hargaMenu = 7000;
             break;
@@ -46,6 +47,8 @@ public class kafe26 {
             case 'L' : 
             totalHarga += 0.4 * totalHarga;
             break;
+            default :
+            System.out.println(ukuranCup + "Tidak tersedia");
         }
         double diskon = keanggotaan ? 0 : 0.1;
         double nominalBayar = totalHarga - (diskon * totalHarga);
